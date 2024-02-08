@@ -8,6 +8,7 @@ permissions:
   contents: read
 jobs:
   publish:
+    name: build and publish docker container
     runs-on: windows-2019
     steps:
       - name: Checkout
