@@ -23,7 +23,7 @@ jobs:
   # Get the current step to only run the main job when the learner is on the same step.
   get_current_step:
     name: Check current step number
-    runs-on: ubuntu-latest
+    runs-on: windows-2019
     steps:
       - name: Checkout
         uses: actions/checkout@v4
