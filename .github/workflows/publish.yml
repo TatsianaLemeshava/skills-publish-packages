@@ -30,9 +30,9 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Docker Build 
-        run: |
-          docker build --no-cache -t testgithubactions .        
+      #- name: Docker Build 
+      #  run: |
+      #    docker build --no-cache -t testgithubactions .        
           
       - name: Build container
         uses: docker/build-push-action@v5
