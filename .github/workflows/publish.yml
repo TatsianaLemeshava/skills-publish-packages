@@ -14,7 +14,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
       # Add your test steps here if needed...
+      - name: Test run
+        run: dotnet test
       
       - name: Docker meta
         id: meta
